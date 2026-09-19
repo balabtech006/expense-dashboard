@@ -1,0 +1,33 @@
+name: Deploy GitHub Pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
+          touch dist/.nojekyll
+      - name: Deploy to gh-pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git clone --depth 1 --branch gh-pages "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" /tmp/ghp
+          find /tmp/ghp -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a dist/. /tmp/ghp/
+          cd /tmp/ghp
+          git add -A
+          git status
+          git commit -m "Deploy Vite build to GitHub Pages" || echo "no changes"
+          git push origin gh-pages
