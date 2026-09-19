@@ -1,0 +1,76 @@
+div>
+        <div className="mt-3 flex justify-between text-xs text-slate-500">
+          <span>
+            Δ total {deltaTotal >= 0 ? '+' : ''}
+            {formatINR(deltaTotal)}
+          </span>
+          <span>
+            Δ after EMI {deltaAfter >= 0 ? '+' : ''}
+            {formatINR(deltaAfter)}
+          </span>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-amber-500/20 bg-gradient-to-br from-amber-500/10 via-white to-indigo-500/5 p-4 shadow-sm dark:from-amber-500/10 dark:via-slate-900 dark:to-indigo-500/10 dark:border-amber-500/20">
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <h2 className="flex items-center gap-2 text-sm font-semibold text-slate-800 dark:text-slate-100">
+            <Landmark className="h-4 w-4 text-rose-500" />
+            EMI vs other spend (this month)
+          </h2>
+          <span className="text-[11px] text-slate-500">Sep 2026 MTD</span>
+        </div>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <StatCard
+            label="Total EMI"
+            value={formatINR(emi.emi)}
+            sub={`${emi.total > 0 ? Math.round((emi.emi / emi.total) * 100) : 0}% of month`}
+            accent="rose"
+            icon={<Landmark className="h-5 w-5" />}
+          />
+          <StatCard
+            label="After EMI"
+            value={formatINR(emi.afterEmi)}
+            sub="Lifestyle / other spend"
+            accent="amber"
+            icon={<Wallet className="h-5 w-5" />}
+          />
+          <StatCard
+            label="Month total"
+            value={formatINR(emi.total)}
+            sub="EMI + other"
+            accent="indigo"
+            icon={<CalendarDays className="h-5 w-5" />}
+          />
+        </div>
+        <div className="mt-3">
+          <div className="mb-1 flex justify-between text-[11px] text-slate-500">
+            <span>EMI {formatINR(emi.emi)}</span>
+            <span>Other {formatINR(emi.afterEmi)}</span>
+          </div>
+          <div className="flex h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+            <div
+              className="bg-rose-500"
+              style={{ width: `${emi.total > 0 ? (emi.emi / emi.total) * 100 : 0}%` }}
+            />
+            <div
+              className="bg-amber-400"
+              style={{ width: `${emi.total > 0 ? (emi.afterEmi / emi.total) * 100 : 0}%` }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h2 className="mb-3 text-sm font-semibold text-slate-800 dark:text-slate-100">
+          14-day spend trend
+        </h2>
+        <div className="h-48 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <AreaChart data={trend}>
+              <defs>
+                <linearGradient id="spendGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#6366f1" stopOpacity={0.35} />
+                  <stop offset="100%" stopColor="#6366f1" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+              <Carte
