@@ -1,0 +1,48 @@
+{
+  "timezone": "Asia/Calcutta",
+  "entries": [
+    {
+      "day": 6,
+      "idSuffix": "hdfc",
+      "amount": 23857,
+      "merchant": "HDFC EMI",
+      "bank": "HDFC",
+      "snippet": "Recurring HDFC EMI on 6th"
+    },
+    {
+      "day": 10,
+      "idSuffix": "land-loan",
+      "amount": 9541,
+      "merchant": "Land loan EMI",
+      "bank": "HDFC",
+      "snippet": "Home loan package: land loan"
+    },
+    {
+      "day": 10,
+      "idSuffix": "home-loan",
+      "amount": 25497,
+      "merchant": "Home loan EMI",
+      "bank": "HDFC",
+      "snippet": "Home loan package: home loan"
+    },
+    {
+      "day": 10,
+      "idSuffix": "land-insurance",
+      "amount": 289,
+      "merchant": "Land insurance loan EMI",
+      "bank": "HDFC",
+      "snippet": "Home loan package: land insurance loan"
+    },
+    {
+      "day": 10,
+      "idSuffix": "home-insurance",
+      "amount": 877,
+      "merchant": "Home insurance loan EMI",
+      "bank": "HDFC",
+      "snippet": "Home loan package: home insurance loan"
+    }
+  ],
+  "exclude": [
+    "Equitas car-loan RTGS 293125"
+  ]
+}
