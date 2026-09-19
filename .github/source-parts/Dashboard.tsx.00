@@ -1,0 +1,127 @@
+import { useMemo } from 'react'
+import {
+  Area,
+  AreaChart,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts'
+import {
+  ArrowDownRight,
+  ArrowUpRight,
+  CalendarDays,
+  CalendarRange,
+  IndianRupee,
+  Landmark,
+  Minus,
+  Sparkles,
+  TrendingUp,
+  Wallet,
+} from 'lucide-react'
+import {
+  endOfMonth,
+  startOfMonth,
+  startOfDay,
+  subDays,
+} from 'date-fns'
+import type {
+  Budget,
+  CustomCategory,
+  Incomes,
+  Investment,
+  Transaction,
+} from '../types/transaction'
+import {
+  dailyTrend,
+  emiSplit,
+  filterByRange,
+  groupByCategory,
+  monthCompare,
+  monthSpend,
+  todaySpend,
+  topMerchants,
+  yearSpend,
+} from '../lib/analytics'
+import {
+  formatCompactINR,
+  formatINR,
+  getCategoryColor,
+  getCategoryIcon,
+  getCategoryLabel,
+} from '../lib/labels'
+import { generateMonthlyInsight, householdIncome } from '../lib/insights'
+import { StatCard } from './StatCard'
+import { TxRow } from './TxRow'
+import { APP_NOW } from '../hooks/useAppState'
+
+const NOW = APP_NOW
+
+export function Dashboard({
+  transactions,
+  budget,
+  incomes,
+  investments,
+  customCategories,
+  onEditCategory,
+}: {
+  transactions: Transaction[]
+  budget: Budget
+  incomes: Incomes
+  investments: Investment[]
+  customCategories: CustomCategory[]
+  onEditCategory: (tx: Transaction) => void
+}) {
+  const today = todaySpend(transactions, NOW)
+  const month = monthSpend(transactions, NOW)
+  const year = yearSpend(transactions, NOW)
+
+  const monthTxs = useMemo(
+    () => filterByRange(transactions, startOfMonth(NOW), endOfMonth(NOW)),
+    [transactions]
+  )
+  const emi = useMemo(() => emiSplit(monthTxs), [monthTxs])
+  const compare = useMemo(() => monthCompare(transactions, NOW), [transactions])
+  const lastEmi = useMemo(() => emiSplit(compare.lastMonthTxs), [compare.lastMonthTxs])
+
+  const trend = useMemo(() => {
+    const from = startOfDay(subDays(NOW, 13))
+    return dailyTrend(transactions, from, NOW)
+  }, [transactions])
+
+  const categories = useMemo(() => groupByCategory(monthTxs), [monthTxs])
+  const merchants = useMemo(() => topMerchants(monthTxs, 5), [monthTxs])
+  const recent = useMemo(() => transactions.slice(0, 8), [transactions])
+
+  const insight = useMemo(
+    () => generateMonthlyInsight(transactions, budget, incomes, customCategories, NOW),
+    [transactions, budget, incomes, customCategories]
+  )
+
+  const incomeTotal = householdIncome(incomes)
+  const plannedInvestments = useMemo(
+    () => investments.reduce((a, i) => a + (i.monthlyAmount || 0), 0),
+    [investments]
+  )
+  const afterSpend = Math.max(0, incomeTotal - month)
+  const afterInvest = Math.max(0, afterSpend - plannedInvestments)
+  const budgetPct = budget.monthlyLimit > 0
+    ? Math.min(100, Math.round((month / budget.monthlyLimit) * 100))
+    : 0
+
+  const deltaTotal = compare.thisMonth - compare.lastMonth
+  const deltaPct =
+    compare.lastMonth > 0
+      ? Math.round((deltaTotal / compare.lastMonth) * 100)
+      : null
+  const deltaAfter = emi.afterEmi - lastEmi.afterEmi
+  const DeltaIcon =
+    deltaTotal > 0 ? ArrowUpRight : deltaTotal < 0 ? ArrowDownRight : Minus
+
+  return (
+    <div className="space-y-5 pb-4">
+      <div className
