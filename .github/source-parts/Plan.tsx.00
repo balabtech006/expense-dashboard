@@ -1,0 +1,109 @@
+import { useState } from 'react'
+import {
+  CalendarClock,
+  Plus,
+  Repeat,
+  Trash2,
+  TrendingUp,
+} from 'lucide-react'
+import type {
+  Category,
+  CustomCategory,
+  GoalTag,
+  Investment,
+  InvestmentType,
+  RecurringExpense,
+} from '../types/transaction'
+import {
+  CategorySelect,
+} from './CategorySelect'
+import {
+  GOAL_TAG_ICONS,
+  GOAL_TAG_LABELS,
+  INVESTMENT_TYPE_ICONS,
+  getCategoryIcon,
+  getCategoryLabel,
+  formatINR,
+} from '../lib/labels'
+
+const INVESTMENT_TYPES: InvestmentType[] = ['FD', 'RD', 'SIP', 'Savings Account']
+const GOAL_TAGS: GoalTag[] = [
+  'home_loan_preclose',
+  'emergency_fund',
+  'baby_expenses',
+  'custom',
+]
+
+export function Plan({
+  recurrings,
+  investments,
+  customCategories,
+  onAddRecurring,
+  onUpdateRecurring,
+  onDeleteRecurring,
+  onAddInvestment,
+  onUpdateInvestment,
+  onDeleteInvestment,
+}: {
+  recurrings: RecurringExpense[]
+  investments: Investment[]
+  customCategories: CustomCategory[]
+  onAddRecurring: (item: Omit<RecurringExpense, 'id' | 'active'> & { active?: boolean }) => void
+  onUpdateRecurring: (id: string, patch: Partial<RecurringExpense>) => void
+  onDeleteRecurring: (id: string) => void
+  onAddInvestment: (item: Omit<Investment, 'id'>) => void
+  onUpdateInvestment: (id: string, patch: Partial<Investment>) => void
+  onDeleteInvestment: (id: string) => void
+}) {
+  const [recName, setRecName] = useState('')
+  const [recAmt, setRecAmt] = useState('')
+  const [recDay, setRecDay] = useState('1')
+  const [recCat, setRecCat] = useState<Category>('bills_utilities')
+
+  const [invName, setInvName] = useState('')
+  const [invAmt, setInvAmt] = useState('')
+  const [invType, setInvType] = useState<InvestmentType>('SIP')
+  const [invGoal, setInvGoal] = useState<GoalTag>('emergency_fund')
+  const [invCustomGoal, setInvCustomGoal] = useState('')
+  const [invNotes, setInvNotes] = useState('')
+
+  const addRec = () => {
+    if (!recName.trim() || !Number(recAmt)) return
+    onAddRecurring({
+      name: recName.trim(),
+      amount: Number(recAmt),
+      category: recCat,
+      dayOfMonth: Math.min(31, Math.max(1, Number(recDay) || 1)),
+    })
+    setRecName('')
+    setRecAmt('')
+    setRecDay('1')
+  }
+
+  const addInv = () => {
+    if (!invName.trim() || !Number(invAmt)) return
+    onAddInvestment({
+      name: invName.trim(),
+      type: invType,
+      monthlyAmount: Number(invAmt),
+      goalTag: invGoal,
+      customGoal: invGoal === 'custom' ? invCustomGoal.trim() : undefined,
+      notes: invNotes.trim() || undefined,
+      progressNotes: '',
+    })
+    setInvName('')
+    setInvAmt('')
+    setInvNotes('')
+    setInvCustomGoal('')
+  }
+
+  const plannedMonthly = investments.reduce((a, i) => a + (i.monthlyAmount || 0), 0)
+
+  return (
+    <div className="space-y-5 pb-4">
+      <section className="rounded-2xl border border-indigo-500/20 bg-gradient-to-br from-indigo-500/10 via-white to-teal-500/5 p-4 shadow-sm dark:from-indigo-500/10 dark:via-slate-900 dark:to-teal-500/10">
+        <div className="mb-1 flex items-center gap-2">
+          <TrendingUp className="h-4 w-4 text-indigo-500" />
+          <h2 className="text-sm font-semibold">Investments & goals</h2>
+        </div>
+        <p className="mb-3 text
