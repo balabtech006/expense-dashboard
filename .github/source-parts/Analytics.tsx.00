@@ -1,0 +1,116 @@
+import { useMemo, useState } from 'react'
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts'
+import { endOfMonth, startOfMonth } from 'date-fns'
+import type { Budget, Transaction } from '../types/transaction'
+import {
+  emiSplit,
+  filterByRange,
+  groupByBank,
+  groupByCategory,
+  groupByPayment,
+  highValueTxs,
+  monthCompare,
+  monthlyEmiBreakdown,
+  recurringAndEmi,
+  sumSpend,
+} from '../lib/analytics'
+import {
+  getCategoryLabel,
+  getCategoryColor,
+  formatINR,
+  PAYMENT_LABELS,
+} from '../lib/labels'
+import { TxRow } from './TxRow'
+
+const NOW = new Date('2026-09-18T15:00:00+05:30')
+
+export function Analytics({
+  transactions,
+  budget,
+  onEditCategory,
+}: {
+  transactions: Transaction[]
+  budget: Budget
+  onEditCategory: (tx: Transaction) => void
+}) {
+  const [section, setSection] = useState<'category' | 'bank' | 'payment'>('category')
+
+  const monthTxs = useMemo(
+    () => filterByRange(transactions, startOfMonth(NOW), endOfMonth(NOW)),
+    [transactions]
+  )
+  const monthEmi = useMemo(() => emiSplit(monthTxs), [monthTxs])
+  const emiHistory = useMemo(() => monthlyEmiBreakdown(transactions, NOW, 6), [transactions])
+
+  const compare = useMemo(() => monthCompare(transactions, NOW), [transactions])
+  const byCat = useMemo(() => groupByCategory(monthTxs), [monthTxs])
+  const byBank = useMemo(() => groupByBank(monthTxs), [monthTxs])
+  const byPay = useMemo(() => groupByPayment(monthTxs), [monthTxs])
+  const high = useMemo(() => highValueTxs(monthTxs, 3000).slice(0, 8), [monthTxs])
+  const recurring = useMemo(
+    () => recurringAndEmi(monthTxs).slice(0, 10),
+    [monthTxs]
+  )
+
+  const actual = sumSpend(monthTxs)
+  const limit = budget.monthlyLimit
+  const pct = Math.min(100, Math.round((actual / limit) * 100))
+
+  const pieData = byCat.map((c) => ({
+    name: getCategoryLabel(c.category),
+    value: c.total,
+    color: getCategoryColor(c.category),
+  }))
+
+  const bankData = byBank.map((b) => ({ name: b.bank, total: b.total }))
+  const payData = byPay.map((p) => ({
+    name: PAYMENT_LABELS[p.method],
+    total: p.total,
+  }))
+
+  const compareData = [
+    { name: 'Aug', total: compare.lastMonth },
+    { name: 'Sep MTD', total: compare.thisMonth },
+  ]
+
+  const catBudget = useMemo(() => {
+    const limits = budget.categoryLimits ?? {}
+    const spent = Object.fromEntries(byCat.map((c) => [c.category, c.total])) as Record<
+      string,
+      number
+    >
+    const order = [
+      'emi',
+      'food_dining',
+      'online_shopping',
+      'bills_utilities',
+      'petrol_fuel',
+      'groceries',
+      'leisure',
+      'other',
+    ] as const
+    return order
+      .filter((cat) => limits[cat] != null && (limits[cat] as number) > 0)
+      .map((cat) => ({
+        category: getCategoryLabel(cat),
+        actual: spent[cat] ?? 0,
+        budget: (limits[cat] as number) ?? 0,
+      }))
+  }, [byCat, budget])
+
+  return (
+    <div className="space-y-5 pb-4">
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <div className="mb-2 flex items-center justify-between"
