@@ -1,0 +1,67 @@
+  ? inv.customGoal
+                  : GOAL_TAG_LABELS[inv.goalTag]
+              return (
+                <li
+                  key={inv.id}
+                  className="rounded-xl border border-slate-200/80 bg-white/70 p-3 dark:border-slate-700 dark:bg-slate-950/40"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="rounded-lg bg-indigo-100 p-2 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-300">
+                      <TypeIcon className="h-4 w-4" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="truncate font-medium">{inv.name}</p>
+                        <span className="shrink-0 text-sm font-bold tabular-nums">
+                          {formatINR(inv.monthlyAmount)}/mo
+                        </span>
+                      </div>
+                      <p className="mt-0.5 flex flex-wrap items-center gap-2 text-[11px] text-slate-500">
+                        <span className="inline-flex items-center gap-1">
+                          <TypeIcon className="h-3 w-3" /> {inv.type}
+                        </span>
+                        <span className="inline-flex items-center gap-1">
+                          <GoalIcon className="h-3 w-3" /> {goalLabel}
+                        </span>
+                      </p>
+                      {inv.notes && (
+                        <p className="mt-1 text-xs text-slate-500">{inv.notes}</p>
+                      )}
+                      <textarea
+                        value={inv.progressNotes ?? ''}
+                        onChange={(e) =>
+                          onUpdateInvestment(inv.id, { progressNotes: e.target.value })
+                        }
+                        placeholder="Progress notes…"
+                        rows={2}
+                        className="mt-2 w-full rounded-lg border border-slate-200 bg-transparent px-2 py-1.5 text-xs dark:border-slate-700"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => onDeleteInvestment(inv.id)}
+                      className="rounded-lg p-1.5 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
+        )}
+      </section>
+
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <div className="mb-1 flex items-center gap-2">
+          <Repeat className="h-4 w-4 text-amber-500" />
+          <h2 className="text-sm font-semibold">Recurring expenses</h2>
+        </div>
+        <p className="mb-3 text-xs text-slate-500">
+          Auto-posts once per month with id <code className="text-[10px]">recurring-&lt;id&gt;-YYYY-MM</code>.
+        </p>
+
+        <div className="mb-3 grid gap-2 sm:grid-cols-2">
+          <input
+            value={recName}
+       
