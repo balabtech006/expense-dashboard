@@ -1,0 +1,64 @@
+="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <StatCard
+          label="Today"
+          value={formatINR(today)}
+          sub="18 Sep 2026"
+          accent="teal"
+          icon={<Sparkles className="h-5 w-5" />}
+        />
+        <StatCard
+          label="This month"
+          value={formatINR(month)}
+          sub={`${budgetPct}% of ${formatINR(budget.monthlyLimit)} budget`}
+          accent="indigo"
+          icon={<CalendarDays className="h-5 w-5" />}
+        />
+        <StatCard
+          label="This year"
+          value={formatINR(year)}
+          sub="2026 YTD"
+          accent="rose"
+          icon={<CalendarRange className="h-5 w-5" />}
+        />
+      </div>
+
+      {(incomeTotal > 0 || plannedInvestments > 0) && (
+        <section className="rounded-2xl border border-teal-500/25 bg-gradient-to-br from-teal-500/10 via-white to-indigo-500/5 p-4 shadow-sm dark:from-teal-500/15 dark:via-slate-900 dark:to-indigo-500/10 dark:border-teal-500/20">
+          <div className="mb-3 flex items-center gap-2">
+            <Wallet className="h-4 w-4 text-teal-600" />
+            <h2 className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+              Income leftover vs planned investments
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            <div className="rounded-xl bg-white/70 p-2.5 dark:bg-slate-950/40">
+              <p className="text-[10px] uppercase tracking-wide text-slate-500">Income</p>
+              <p className="text-sm font-bold tabular-nums text-teal-700 dark:text-teal-300">
+                {formatINR(incomeTotal)}
+              </p>
+            </div>
+            <div className="rounded-xl bg-white/70 p-2.5 dark:bg-slate-950/40">
+              <p className="text-[10px] uppercase tracking-wide text-slate-500">Spent</p>
+              <p className="text-sm font-bold tabular-nums text-slate-800 dark:text-slate-100">
+                {formatINR(month)}
+              </p>
+            </div>
+            <div className="rounded-xl bg-white/70 p-2.5 dark:bg-slate-950/40">
+              <p className="flex items-center gap-1 text-[10px] uppercase tracking-wide text-slate-500">
+                <TrendingUp className="h-3 w-3" /> Planned invest
+              </p>
+              <p className="text-sm font-bold tabular-nums text-indigo-600 dark:text-indigo-300">
+                {formatINR(plannedInvestments)}
+              </p>
+            </div>
+            <div className="rounded-xl bg-white/70 p-2.5 dark:bg-slate-950/40">
+              <p className="text-[10px] uppercase tracking-wide text-slate-500">Left after invest</p>
+              <p className={`text-sm font-bold tabular-nums ${afterInvest > 0 ? 'text-emerald-600 dark:text-emerald-300' : 'text-rose-600 dark:text-rose-300'}`}>
+                {formatINR(afterInvest)}
+              </p>
+            </div>
+          </div>
+          <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+            After spend leftover ~{formatINR(afterSpend)}. Investments are goals only — not counted as expenses.
+            {plannedInvestments > afterSpend && incomeTotal > 0
+              ? ` Planned SIPs/FDs exceed 
