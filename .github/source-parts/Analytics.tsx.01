@@ -1,0 +1,55 @@
+>
+          <h2 className="text-sm font-semibold">Budget vs actual (Sep)</h2>
+          <span className="text-xs text-slate-500">
+            {formatINR(actual)} / {formatINR(limit)}
+          </span>
+        </div>
+        <div className="h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+          <div
+            className={`h-full rounded-full transition-all ${
+              pct > 90 ? 'bg-rose-500' : pct > 70 ? 'bg-amber-500' : 'bg-teal-500'
+            }`}
+            style={{ width: `${pct}%` }}
+          />
+        </div>
+        <p className="mt-2 text-xs text-slate-500">
+          {pct}% of monthly budget used · {formatINR(Math.max(0, limit - actual))} left
+        </p>
+      </section>
+
+      <section className="rounded-2xl border border-amber-500/25 bg-gradient-to-br from-amber-500/10 via-white to-rose-500/5 p-4 shadow-sm dark:from-amber-500/10 dark:via-slate-900 dark:to-rose-500/10 dark:border-amber-500/20">
+        <h2 className="mb-1 text-sm font-semibold">After EMI — monthly compare</h2>
+        <p className="mb-3 text-xs text-slate-500 dark:text-slate-400">
+          How much you spent beyond EMIs each month (lifestyle spend).
+        </p>
+        <div className="mb-4 grid grid-cols-3 gap-2 text-center">
+          <div className="rounded-xl bg-white/70 p-2 dark:bg-slate-950/40">
+            <p className="text-[10px] uppercase tracking-wide text-slate-500">EMI</p>
+            <p className="text-sm font-bold tabular-nums text-rose-600 dark:text-rose-400">{formatINR(monthEmi.emi)}</p>
+          </div>
+          <div className="rounded-xl bg-white/70 p-2 dark:bg-slate-950/40">
+            <p className="text-[10px] uppercase tracking-wide text-slate-500">After EMI</p>
+            <p className="text-sm font-bold tabular-nums text-amber-600 dark:text-amber-400">{formatINR(monthEmi.afterEmi)}</p>
+          </div>
+          <div className="rounded-xl bg-white/70 p-2 dark:bg-slate-950/40">
+            <p className="text-[10px] uppercase tracking-wide text-slate-500">Total</p>
+            <p className="text-sm font-bold tabular-nums text-slate-800 dark:text-slate-100">{formatINR(monthEmi.total)}</p>
+          </div>
+        </div>
+        <div className="h-44">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={emiHistory}>
+              <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-700" />
+              <XAxis dataKey="label" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 10 }} tickFormatter={(v) => `₹${(v / 1000).toFixed(0)}k`} width={40} />
+              <Tooltip
+                formatter={(v, name) => [formatINR(Number(v ?? 0)), name === 'emi' ? 'EMI' : 'After EMI']}
+                contentStyle={{ borderRadius: 12, fontSize: 12 }}
+              />
+              <Legend wrapperStyle={{ fontSize: 11 }} formatter={(v) => (v === 'emi' ? 'EMI' : 'After EMI')} />
+              <Bar dataKey="emi" stackId="a" fill="#f43f5e" radius={[0, 0, 0, 0]} />
+              <Bar dataKey="afterEmi" stackId="a" fill="#fbbf24" radius={[8, 8, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        <p className="mt-2 
