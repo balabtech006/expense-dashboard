@@ -1,0 +1,18 @@
+.map((tx) => (
+              <TxRow key={tx.id} tx={tx} onEditCategory={onEditCategory} compact />
+            ))
+          )}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h2 className="mb-2 text-sm font-semibold">Recurring & EMI</h2>
+        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+          {recurring.map((tx) => (
+            <TxRow key={tx.id} tx={tx} onEditCategory={onEditCategory} compact />
+          ))}
+        </div>
+      </section>
+    </div>
+  )
+}
