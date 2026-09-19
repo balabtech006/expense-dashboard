@@ -11,6 +11,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Assemble source parts
+        run: |
+          if [ -d .github/source-parts ]; then
+            node scripts/assemble-source-parts.mjs
+          fi
+
       - name: Install and build
         run: |
           npm install
