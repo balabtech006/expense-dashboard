@@ -1,0 +1,80 @@
+text-center text-xs text-slate-500">
+          This month after EMI: {formatINR(monthEmi.afterEmi)}
+          {emiHistory.length >= 2 && emiHistory[emiHistory.length - 2].afterEmi > 0 && (
+            <>
+              {' '}
+              · vs prior month {formatINR(emiHistory[emiHistory.length - 2].afterEmi)} (
+              {(
+                ((monthEmi.afterEmi - emiHistory[emiHistory.length - 2].afterEmi) /
+                  emiHistory[emiHistory.length - 2].afterEmi) *
+                100
+              ).toFixed(0)}
+              %)
+            </>
+          )}
+        </p>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h2 className="mb-3 text-sm font-semibold">Month compare</h2>
+        <div className="h-40">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={compareData}>
+              <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-700" />
+              <XAxis dataKey="name" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 10 }} tickFormatter={(v) => `₹${(v / 1000).toFixed(0)}k`} width={40} />
+              <Tooltip formatter={(v) => formatINR(Number(v ?? 0))} contentStyle={{ borderRadius: 12, fontSize: 12 }} />
+              <Bar dataKey="total" fill="#6366f1" radius={[8, 8, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        <p className="mt-1 text-center text-xs text-slate-500">
+          Sep MTD {formatINR(compare.thisMonth)} vs Aug {formatINR(compare.lastMonth)}
+          {compare.lastMonth > 0 && (
+            <>
+              {' '}
+              (
+              {(((compare.thisMonth - compare.lastMonth) / compare.lastMonth) * 100).toFixed(0)}
+              %)
+            </>
+          )}
+        </p>
+      </section>
+
+      <div className="flex gap-2">
+        {(['category', 'bank', 'payment'] as const).map((s) => (
+          <button
+            key={s}
+            type="button"
+            onClick={() => setSection(s)}
+            className={`rounded-full px-3 py-1.5 text-xs font-semibold capitalize ${
+              section === s
+                ? 'bg-indigo-600 text-white'
+                : 'bg-slate-100 dark:bg-slate-800'
+            }`}
+          >
+            {s}
+          </button>
+        ))}
+      </div>
+
+      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h2 className="mb-3 text-sm font-semibold capitalize">By {section}</h2>
+        {section === 'category' && (
+          <div className="h-56">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={pieData}
+                  dataKey="value"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={50}
+                  outerRadius={80}
+                  paddingAngle={2}
+                >
+                  {pieData.map((d) => (
+                    <Cell key={d.name} fill={d.color} />
+                  ))}
+                
