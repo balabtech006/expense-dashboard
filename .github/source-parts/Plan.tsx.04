@@ -1,0 +1,13 @@
+       className="rounded-lg p-1.5 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        )}
+      </section>
+    </div>
+  )
+}
