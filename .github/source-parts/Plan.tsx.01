@@ -1,0 +1,76 @@
+-xs text-slate-500">
+          Track FD / RD / SIP / Savings. Planned this month:{' '}
+          <span className="font-semibold text-slate-800 dark:text-slate-100">
+            {formatINR(plannedMonthly)}
+          </span>
+        </p>
+
+        <div className="mb-3 grid gap-2 sm:grid-cols-2">
+          <input
+            value={invName}
+            onChange={(e) => setInvName(e.target.value)}
+            placeholder="Name (e.g. Nippon SIP)"
+            className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-950/40"
+          />
+          <input
+            type="number"
+            value={invAmt}
+            onChange={(e) => setInvAmt(e.target.value)}
+            placeholder="Monthly ₹"
+            className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-950/40"
+          />
+          <select
+            value={invType}
+            onChange={(e) => setInvType(e.target.value as InvestmentType)}
+            className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-950/40"
+          >
+            {INVESTMENT_TYPES.map((t) => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+          <select
+            value={invGoal}
+            onChange={(e) => setInvGoal(e.target.value as GoalTag)}
+            className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-950/40"
+          >
+            {GOAL_TAGS.map((g) => (
+              <option key={g} value={g}>
+                {GOAL_TAG_LABELS[g]}
+              </option>
+            ))}
+          </select>
+          {invGoal === 'custom' && (
+            <input
+              value={invCustomGoal}
+              onChange={(e) => setInvCustomGoal(e.target.value)}
+              placeholder="Custom goal label"
+              className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm sm:col-span-2 dark:border-slate-700 dark:bg-slate-950/40"
+            />
+          )}
+          <input
+            value={invNotes}
+            onChange={(e) => setInvNotes(e.target.value)}
+            placeholder="Notes (optional)"
+            className="rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-sm sm:col-span-2 dark:border-slate-700 dark:bg-slate-950/40"
+          />
+        </div>
+        <button
+          type="button"
+          onClick={addInv}
+          className="mb-4 inline-flex w-full items-center justify-center gap-1 rounded-xl bg-indigo-600 py-2.5 text-sm font-semibold text-white"
+        >
+          <Plus className="h-4 w-4" /> Add investment
+        </button>
+
+        {investments.length === 0 ? (
+          <p className="py-3 text-center text-xs text-slate-500">No investments yet.</p>
+        ) : (
+          <ul className="space-y-2">
+            {investments.map((inv) => {
+              const TypeIcon = INVESTMENT_TYPE_ICONS[inv.type]
+              const GoalIcon = GOAL_TAG_ICONS[inv.goalTag]
+              const goalLabel =
+                inv.goalTag === 'custom' && inv.customGoal
+                
