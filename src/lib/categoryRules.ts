@@ -65,3 +65,4 @@ export function upsertRule(
   }
   return [...rules, next]
 }
+
