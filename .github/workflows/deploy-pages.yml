@@ -23,6 +23,8 @@ jobs:
               git push origin HEAD:main
             fi
           fi
+      - name: Export inbox JSONL from seed
+        run: node scripts/export-inbox-from-seed.mjs
       - name: Install and build
         run: |
           npm install
