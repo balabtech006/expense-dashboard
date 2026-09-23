@@ -40,6 +40,7 @@ export interface Transaction {
     subject?: string
     messageId?: string
     snippet?: string
+    ref?: string
   }
 }
 
