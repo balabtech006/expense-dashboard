@@ -33,7 +33,9 @@ function parseJsonl(text: string): Transaction[] {
 }
 
 export async function fetchInboxTransactions(): Promise<Transaction[]> {
-  const res = await fetch(`/inbox/transactions.jsonl?t=${Date.now()}`, {
+  const base = import.meta.env.BASE_URL || '/'
+  const url = `${base}inbox/transactions.jsonl?t=${Date.now()}`
+  const res = await fetch(url, {
     cache: 'no-store',
   })
   if (!res.ok) throw new Error(`Failed to fetch inbox: ${res.status}`)
