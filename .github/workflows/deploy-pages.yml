@@ -17,7 +17,7 @@ jobs:
             node scripts/assemble-source-parts.mjs
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git config user.name "github-actions[bot]"
-            git add src/components/Plan.tsx src/components/Analytics.tsx src/components/Dashboard.tsx src/data/seedTransactions.ts || true
+            git add src/components/Plan.tsx src/components/Analytics.tsx src/components/Dashboard.tsx src/data/seedTransactions.ts public/inbox/transactions.jsonl || true
             if ! git diff --staged --quiet; then
               git commit -m "Assemble full source files from source-parts"
               git push origin HEAD:main

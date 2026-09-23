@@ -18,6 +18,7 @@ const targets = {
   'Analytics.tsx': 'src/components/Analytics.tsx',
   'Dashboard.tsx': 'src/components/Dashboard.tsx',
   'seedTransactions.ts': 'src/data/seedTransactions.ts',
+  'transactions.jsonl': 'public/inbox/transactions.jsonl',
 }
 for (const [name, parts] of groups) {
   parts.sort()
