@@ -1,115 +1,117 @@
-gpay-11263900272@okbizaxis",
-    bank: "HDFC",
-    paymentMethod: "upi",
-    category: "other",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "You have done a UPI txn",
-    },
+"category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn"
+    }
   },
   {
-    id: "hdfc-20260916-495810ef6d",
-    datetime: "2026-09-16T20:16:24+05:30",
-    amount: 700.0,
-    merchant: "Google Play Store",
-    bank: "HDFC",
-    paymentMethod: "upi",
-    category: "online_shopping",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "You have done a UPI txn",
-      snippet: "VPA playstore1.bd@axisbank",
-    },
+    "id": "icici-20260915-2a8f12b45f",
+    "datetime": "2026-09-15T14:07:10+05:30",
+    "amount": 662.04,
+    "merchant": "Zomato",
+    "bank": "ICICI",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "Transaction alert for your ICICI Bank Credit Card",
+      "messageId": "1a0a437519293264",
+      "snippet": "INR 662.04 on Sep 15, 2026 at 14:07:10. Info: ZOMATO"
+    }
   },
   {
-    id: "hdfc-20260918-68e23eceb7",
-    datetime: "2026-09-18T08:14:40+05:30",
-    amount: 2.0,
-    merchant: "Airtel Autopay",
-    bank: "HDFC",
-    paymentMethod: "upi",
-    category: "bills_utilities",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "You have done a UPI txn",
-      snippet: "Rs.2.00 airtelautopay.payu@hdfcbank",
-    },
+    "id": "hdfc-20260915-b9a161ebb9",
+    "datetime": "2026-09-15T17:10:54+05:30",
+    "amount": 5800.0,
+    "merchant": "sreebalajifurniture07@okicici",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "shopping",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn"
+    }
   },
   {
-    id: "icici-20260918-84ebfbc149",
-    datetime: "2026-09-18T08:16:50+05:30",
-    amount: 941.64,
-    merchant: "Bharti Airtel",
-    bank: "ICICI",
-    paymentMethod: "credit_card",
-    category: "bills_utilities",
-    status: "posted",
-    source: {
-      provider: "gmail",
-      subject: "Transaction alert for your ICICI Bank Credit Card",
-      messageId: "1a0b2691d7762350",
-      snippet: "INR 941.64 on Sep 18, 2026 at 08:16:50. Info: BHARTI AIRTEL LIMITED",
-    },
+    "id": "hdfc-20260915-5689ae783d",
+    "datetime": "2026-09-15T20:06:36+05:30",
+    "amount": 1409.0,
+    "merchant": "gpay-11263900272@okbizaxis",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn"
+    }
   },
   {
-    id: "hdfc-20260918-912641c654",
-    datetime: "2026-09-18T16:28:05+05:30",
-    amount: 2.0,
-    merchant: "pradeepab35-1@okhdfcbank",
-    bank: "HDFC",
-    paymentMethod: "upi",
-    category: "other",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "You have done a UPI txn",
-      snippet: "Rs.2.00 debited to pradeepab35-1@okhdfcbank (MARISELVAM P) on 18-09-26",
-    },
+    "id": "hdfc-20260916-495810ef6d",
+    "datetime": "2026-09-16T20:16:24+05:30",
+    "amount": 700.0,
+    "merchant": "Google Play Store",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "online_shopping",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn",
+      "snippet": "VPA playstore1.bd@axisbank"
+    }
   },
   {
-    id: "hdfc-20260919-27cb2f64bd",
-    datetime: "2026-09-19T01:11:06+05:30",
-    amount: 115.0,
-    merchant: "q396830381@ybl",
-    bank: "HDFC",
-    paymentMethod: "credit_card",
-    category: "other",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "RuPay Credit Card UPI debit",
-      snippet: "Rs.115.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q396830381@ybl Date: 19-09-26 UPI Transaction Reference Number: 129846440529",
-      ref: "129846440529",
-    },
+    "id": "hdfc-20260918-68e23eceb7",
+    "datetime": "2026-09-18T08:14:40+05:30",
+    "amount": 2.0,
+    "merchant": "Airtel Autopay",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "bills_utilities",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn",
+      "snippet": "Rs.2.00 airtelautopay.payu@hdfcbank"
+    }
   },
   {
-    id: "hdfc-20260919-513594cc15",
-    datetime: "2026-09-19T14:36:00+05:30",
-    amount: 2140.0,
-    merchant: "1351261010268@cnrb",
-    bank: "HDFC",
-    paymentMethod: "credit_card",
-    category: "other",
-    status: "posted",
-    source: {
-      provider: "zoho",
-      subject: "RuPay Credit Card UPI debit",
-      snippet: "Rs.2140.00 has been debited from your RuPay Credit Card (ending 9381) Paid to 1351261010268@cnrb Date: 19-09-26 UPI Transaction Reference Number: 129873688159",
-      ref: "129873688159",
-    },
+    "id": "icici-20260918-84ebfbc149",
+    "datetime": "2026-09-18T08:16:50+05:30",
+    "amount": 941.64,
+    "merchant": "Bharti Airtel",
+    "bank": "ICICI",
+    "paymentMethod": "credit_card",
+    "category": "bills_utilities",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "Transaction alert for your ICICI Bank Credit Card",
+      "messageId": "1a0b2691d7762350",
+      "snippet": "INR 941.64 on Sep 18, 2026 at 08:16:50. Info: BHARTI AIRTEL LIMITED"
+    }
   },
   {
-    id: "hdfc-20260919-2f1ad021f6",
-    datetime: "2026-09-19T14:51:05+05:30",
-    amount: 1625.0,
-    merchant: "NEW KEERTHI SUPER MARKET",
-    bank: "HDFC",
-    paymentMethod: "upi",
-    category: "groceries",
-    status: "posted",
-    source: {
-      provider: "zoho",
-     
+    "id": "hdfc-20260918-912641c654",
+    "datetime": "2026-09-18T16:28:05+05:30",
+    "amount": 2.0,
+    "merchant": "pradeepab35-1@okhdfcbank",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn",
+      "snippet": "Rs.2.00 debited to pradeepab35-1@okhdfcbank (MARISELVAM P) on 18-09-26"
+    }
+  },
+  {
+    "id": "hdfc-20260919-27cb2f64bd",
+    "datetime": "2026-09-19T01:11:06+05:30",
+    "amount": 115.0,
+    "merchant": "q39683
