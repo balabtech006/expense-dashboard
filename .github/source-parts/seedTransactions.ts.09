@@ -1,0 +1,62 @@
+-24T14:11:27+05:30",
+    "amount": 150.0,
+    "merchant": "paytmqr6tdjfz@ptys",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.150.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytmqr6tdjfz@ptys",
+      "ref": "130155504799"
+    }
+  },
+  {
+    "id": "hdfc-20260924-82df5cfb64",
+    "datetime": "2026-09-24T21:59:32+05:30",
+    "amount": 170.0,
+    "merchant": "paytm.s2xvkub@pty",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.170.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s2xvkub@pty",
+      "ref": "130183258395"
+    }
+  },
+  {
+    "id": "hdfc-20260924-de2cf6f8ef",
+    "datetime": "2026-09-24T22:04:05+05:30",
+    "amount": 35.0,
+    "merchant": "affra2000-1@okaxis",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "You have done a UPI txn",
+      "snippet": "Rs.35.00 is debited from your account ending 2851 towards VPA affra2000-1@okaxis",
+      "ref": "626791422967"
+    }
+  },
+  {
+    "id": "hdfc-20260924-92c0c2ca74",
+    "datetime": "2026-09-24T23:27:27+05:30",
+    "amount": 500.0,
+    "merchant": "L P KRISHNASWAMY NAID",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "zoho",
+      "subject": "HDFC Credit Card debit",
+      "snippet": "Rs. 500.00 has been debited from your HDFC Bank Credit Card ending 8946 towards L P KRISHNASWAMY NAID"
+    }
+  }
+]
