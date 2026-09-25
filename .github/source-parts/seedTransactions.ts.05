@@ -1,4 +1,4 @@
-thod": "credit_card",
+ethod": "credit_card",
     "category": "food_dining",
     "status": "posted",
     "source": {
@@ -117,4 +117,4 @@ thod": "credit_card",
     "merchant": "paytm-65934657@ptys",
     "bank": "HDFC",
     "paymentMethod": "upi",
-    
+   
