@@ -1,4 +1,4 @@
--24T14:11:27+05:30",
+9-24T14:11:27+05:30",
     "amount": 150.0,
     "merchant": "paytmqr6tdjfz@ptys",
     "bank": "HDFC",
@@ -58,5 +58,47 @@
       "subject": "HDFC Credit Card debit",
       "snippet": "Rs. 500.00 has been debited from your HDFC Bank Credit Card ending 8946 towards L P KRISHNASWAMY NAID"
     }
-  }
-]
+  },
+  {
+    "id": "hdfc-20260925-b91acba453",
+    "datetime": "2026-09-25T00:28:11+05:30",
+    "amount": 2.0,
+    "merchant": "pradeepab35-1@okhdfcbank (MARISELVAM P)",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "You have done a UPI txn",
+      "snippet": "Rs.2.00 is debited from your account ending 2851 towards VPA pradeepab35-1@okhdfcbank (MARISELVAM P)",
+      "ref": "130186606566",
+      "messageId": "1a0d4c85fcc93234"
+    }
+  },
+  {
+    "id": "icici-20260925-e7ab943d97",
+    "datetime": "2026-09-25T10:53:53+05:30",
+    "amount": 1194.0,
+    "merchant": "AMAZON PAY IN E COMMERCE",
+    "bank": "ICICI",
+    "paymentMethod": "credit_card",
+    "category": "online_shopping",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "Transaction alert for your ICICI Bank Credit Card",
+      "snippet": "INR 1,194.00 on Sep 25, 2026 at 10:53:53. Info: AMAZON PAY IN E COMMERCE",
+      "messageId": "1a0d705779094d78"
+    }
+  },
+  {
+    "id": "hdfc-20260925-daa499e9f1",
+    "datetime": "2026-09-25T11:52:34+05:30",
+    "amount": 493.05,
+    "merchant": "2415147715361-01@jiopay",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "s
