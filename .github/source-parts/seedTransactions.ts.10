@@ -1,0 +1,26 @@
+ource": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.493.05 has been debited from your RuPay Credit Card (ending 9381) Paid to 2415147715361-01@jiopay",
+      "ref": "130199046999",
+      "messageId": "1a0d73aee8bab880"
+    }
+  },
+  {
+    "id": "hdfc-20260925-2c7e6af9c1",
+    "datetime": "2026-09-25T12:14:23+05:30",
+    "amount": 98.0,
+    "merchant": "2415147715361-01@jiopay",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.98.00 has been debited from your RuPay Credit Card (ending 9381) Paid to 2415147715361-01@jiopay",
+      "ref": "130200168461",
+      "messageId": "1a0d74eea28d372f"
+    }
+  }
+]
