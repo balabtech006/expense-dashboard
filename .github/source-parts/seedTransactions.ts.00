@@ -1,7 +1,8 @@
 import type { Transaction } from '../types/transaction'
 
 /** Real September 2026 spends (Gmail + Zoho + SMS-only EMIs). */
-export const SEED_TRANSACTIONS: Transaction[] = [
+export const SEED_TRANSACTIONS: Transaction[] = 
+[
   {
     "id": "icici-20260901-bbd3f31331",
     "datetime": "2026-09-01T13:10:09+05:30",
@@ -116,4 +117,4 @@ export const SEED_TRANSACTIONS: Transaction[] = [
     "source": {
       "provider": "zoho",
       "subject": "You have done a UPI txn",
-      "snippet": "Commissioner
+      "snippet": "Commissione
