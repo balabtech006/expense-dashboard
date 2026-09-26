@@ -22,5 +22,55 @@ ource": {
       "ref": "130200168461",
       "messageId": "1a0d74eea28d372f"
     }
+  },
+  {
+    "id": "hdfc-20260926-34a6594147",
+    "datetime": "2026-09-26T14:55:44+05:30",
+    "amount": 1623.6,
+    "merchant": "BALAJI SERVICE STATION",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "petrol_fuel",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "A payment was made using your Credit Card",
+      "snippet": "Rs.1623.60 debited from Credit Card ending 8946 towards BALAJI SERVICE STATION on 26 Sep, 2026 at 14:55:44",
+      "messageId": "1a0dde065f1fd5c1"
+    }
+  },
+  {
+    "id": "hdfc-20260926-ce1bed4019",
+    "datetime": "2026-09-26T15:23:42+05:30",
+    "amount": 230.56,
+    "merchant": "2415147695362-01@jiopay",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.230.56 has been debited from your RuPay Credit Card (ending 9381) Paid to 2415147695362-01@jiopay",
+      "ref": "130261247023",
+      "messageId": "1a0dd229f4b237a8"
+    }
+  },
+  {
+    "id": "hdfc-20260926-ecd940bbe6",
+    "datetime": "2026-09-26T21:14:16+05:30",
+    "amount": 299.0,
+    "merchant": "nuewz.63574863@hdfcbank",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.299.00 has been debited from your RuPay Credit Card (ending 9381) Paid to nuewz.63574863@hdfcbank",
+      "ref": "130283819940",
+      "messageId": "1a0de6390f9519d1"
+    }
   }
 ]
