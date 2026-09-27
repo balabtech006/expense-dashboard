@@ -1,0 +1,102 @@
+   "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.80.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q376464941@ybl",
+      "ref": "130333062381",
+      "messageId": "1a0e356d1c622141"
+    }
+  },
+  {
+    "id": "hdfc-20260927-19db269c6a",
+    "datetime": "2026-09-27T20:21:13+05:30",
+    "amount": 20.0,
+    "merchant": "paytm.s229gx7@pty",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.20.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s229gx7@pty",
+      "ref": "130333268729",
+      "messageId": "1a0e359599b5aa6b"
+    }
+  },
+  {
+    "id": "hdfc-20260927-3e54acf148",
+    "datetime": "2026-09-27T20:22:10+05:30",
+    "amount": 50.0,
+    "merchant": "q904691898@ybl",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.50.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q904691898@ybl",
+      "ref": "130333327122",
+      "messageId": "1a0e35a389209a4b"
+    }
+  },
+  {
+    "id": "hdfc-20260927-38a6348b70",
+    "datetime": "2026-09-27T20:23:09+05:30",
+    "amount": 20.0,
+    "merchant": "paytm.s1u0akf@pty",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.20.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s1u0akf@pty",
+      "ref": "130333404062",
+      "messageId": "1a0e35b1c33fa770"
+    }
+  },
+  {
+    "id": "hdfc-20260927-e2a00aa49e",
+    "datetime": "2026-09-27T20:23:58+05:30",
+    "amount": 5.0,
+    "merchant": "paytm.s1u0akf@pty",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.5.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s1u0akf@pty",
+      "ref": "130333452470",
+      "messageId": "1a0e35bddb477641"
+    }
+  },
+  {
+    "id": "hdfc-20260927-d12361f876",
+    "datetime": "2026-09-27T20:30:56+05:30",
+    "amount": 250.0,
+    "merchant": "paytm.s1u0akf@pty",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.250.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s1u0akf@pty",
+      "ref": "130333949135",
+      "messageId": "1a0e3623ea124434"
+    }
+  },
+  {
+    "id": "hdfc-20260927-6b6d68f01b",
+    "datetime": "2026-09-27T20:32:45+05:30",
+    "amount": 90.0,
+    "merchant": "q870449752@ybl",
+    "bank": "HDFC",
+    "paymentMethod": 
