@@ -117,7 +117,4 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "source": {
       "provider": "zoho",
       "subject": "You have done a UPI txn",
-      "snippet": "Commissione"
-    }
-  }
-]
+      "snippet": "Commissione
