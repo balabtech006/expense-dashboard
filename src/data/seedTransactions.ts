@@ -1395,5 +1395,22 @@ export const SEED_TRANSACTIONS: Transaction[] =
       "ref": "130361449449",
       "messageId": "1a0e718a558bf03e"
     }
+  },
+  {
+    "id": "hdfc-20260928-93e4ee49c4",
+    "datetime": "2026-09-28T22:44:19+05:30",
+    "amount": 325.0,
+    "merchant": "paytm-61934933@ptybl",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.325.00 is debited from your account ending 2851 towards VPA paytm-61934933@ptybl (IFHRMS Tamilnadu) on 28-09-26. UPI transaction reference no.: 130392102668.",
+      "ref": "130392102668",
+      "messageId": "1a0e902bba05ea87"
+    }
   }
 ]
