@@ -1,0 +1,22 @@
+  "ref": "130466775778",
+      "messageId": "1a0f179ad5c17804"
+    }
+  },
+  {
+    "id": "hdfc-20260930-ce4922597e",
+    "datetime": "2026-09-30T20:32:25+05:30",
+    "amount": 100.0,
+    "merchant": "paytmqr6l6bci@ptys",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.100.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytmqr6l6bci@ptys Date: 30-09-26 UPI Transaction Reference Number: 130490962831",
+      "ref": "130490962831",
+      "messageId": "1a0f2d6b2924e0f6"
+    }
+  }
+]
