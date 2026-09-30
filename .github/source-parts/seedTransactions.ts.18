@@ -1,0 +1,30 @@
+gory": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "RuPay Credit Card UPI debit",
+      "snippet": "Rs.40.00 has been debited from your RuPay Credit Card (ending 9381) Paid to gpay-12211409643@okbizaxis",
+      "ref": "130334445082",
+      "messageId": "1a0e368f68d5d960"
+    }
+  },
+  {
+    "id": "hdfc-20260928-e5e68433e5",
+    "datetime": "2026-09-28T13:49:01+05:30",
+    "amount": 25000.0,
+    "merchant": "nandhianandhi27@okaxis",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.25000.00 is debited from your account ending 2851 towards VPA nandhianandhi27@okaxis (P ANANTHI) on 28-09-26. UPI transaction reference no.: 130361449449.",
+      "ref": "130361449449",
+      "messageId": "1a0e718a558bf03e"
+    }
+  },
+  {
+    "id": "hdfc-20260928-93e4ee49c4",
+    "date
