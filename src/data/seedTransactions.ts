@@ -1412,5 +1412,39 @@ export const SEED_TRANSACTIONS: Transaction[] =
       "ref": "130392102668",
       "messageId": "1a0e902bba05ea87"
     }
+  },
+  {
+    "id": "hdfc-20260930-fa88a6c219",
+    "datetime": "2026-09-30T14:11:12+05:30",
+    "amount": 1575.0,
+    "merchant": "tamilshree28@oksbi",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.1575.00 is debited from your account ending 2851 towards VPA tamilshree28@oksbi (BALAJI PRABHU V R) on 30-09-26. UPI transaction reference no.: 130466775778.",
+      "ref": "130466775778",
+      "messageId": "1a0f179ad5c17804"
+    }
+  },
+  {
+    "id": "hdfc-20260930-ce4922597e",
+    "datetime": "2026-09-30T20:32:25+05:30",
+    "amount": 100.0,
+    "merchant": "paytmqr6l6bci@ptys",
+    "bank": "HDFC",
+    "paymentMethod": "credit_card",
+    "category": "food_dining",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.100.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytmqr6l6bci@ptys Date: 30-09-26 UPI Transaction Reference Number: 130490962831",
+      "ref": "130490962831",
+      "messageId": "1a0f2d6b2924e0f6"
+    }
   }
 ]
