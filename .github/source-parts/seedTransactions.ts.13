@@ -1,4 +1,16 @@
-  "ref": "130466775778",
+
+    "datetime": "2026-09-30T14:11:12+05:30",
+    "amount": 1575.0,
+    "merchant": "tamilshree28@oksbi",
+    "bank": "HDFC",
+    "paymentMethod": "upi",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "❗  You have done a UPI txn. Check details!",
+      "snippet": "Rs.1575.00 is debited from your account ending 2851 towards VPA tamilshree28@oksbi (BALAJI PRABHU V R) on 30-09-26. UPI transaction reference no.: 130466775778.",
+      "ref": "130466775778",
       "messageId": "1a0f179ad5c17804"
     }
   },
