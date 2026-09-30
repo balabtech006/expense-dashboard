@@ -24,7 +24,7 @@ s.5.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.
     "id": "hdfc-20260927-6b6d68f01b",
     "datetime": "2026-09-27T20:32:45+05:30",
     "amount": 90.0,
-    "merchant": "q870449021@ybl",
+    "merchant": "q870449752@ybl",
     "bank": "HDFC",
     "paymentMethod": "credit_card",
     "category": "food_dining",
