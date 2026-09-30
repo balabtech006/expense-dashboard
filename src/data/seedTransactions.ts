@@ -1210,6 +1210,22 @@ export const SEED_TRANSACTIONS: Transaction[] =
     }
   },
   {
+    "id": "icici-20260927-1ad58da571",
+    "datetime": "2026-09-27T10:35:17+05:30",
+    "amount": 9265.5,
+    "merchant": "Payzapp Wallet",
+    "bank": "ICICI",
+    "paymentMethod": "credit_card",
+    "category": "other",
+    "status": "posted",
+    "source": {
+      "provider": "gmail",
+      "subject": "Transaction alert for your ICICI Bank Credit Card",
+      "messageId": "1a0e3d5b30aac4fb",
+      "snippet": "INR 9265.50 on Sep 27, 2026 at 10:35:17. Info: PAYZAPP WALLET"
+    }
+  },
+  {
     "id": "hdfc-20260927-ad757334bb",
     "datetime": "2026-09-27T20:16:21+05:30",
     "amount": 40.0,
