@@ -1462,5 +1462,90 @@ export const SEED_TRANSACTIONS: Transaction[] =
       "ref": "130490962831",
       "messageId": "1a0f2d6b2924e0f6"
     }
+  },
+{
+  "id": "hdfc-20261001-3d72ec6c61",
+  "datetime": "2026-10-01T22:31:57+05:30",
+  "amount": 4000.0,
+  "merchant": "pradeepab35-1@okhdfcbank (MARISELVAM P)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.4000.00 is debited from your account ending 2851 towards VPA pradeepab35-1@okhdfcbank (MARISELVAM P) on 01-10-26. UPI transaction reference no.: 664054434693",
+    "ref": "664054434693",
+    "messageId": "1a0f86a7d4d3c359"
   }
+},
+{
+  "id": "hdfc-20261002-16dc887fc5",
+  "datetime": "2026-10-02T12:40:14+05:30",
+  "amount": 35.0,
+  "merchant": "paytmqr6v60ln@ptys",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.35.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytmqr6v60ln@ptys Date: 02-10-26 UPI Transaction Reference Number: 130576434917",
+    "ref": "130576434917",
+    "messageId": "1a0fb731aa1af4d8"
+  }
+},
+{
+  "id": "hdfc-20261002-68cb2eef06",
+  "datetime": "2026-10-02T13:21:12+05:30",
+  "amount": 400.0,
+  "merchant": "pinelabs.11489778@pineaxis",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.400.00 has been debited from your RuPay Credit Card (ending 9381) Paid to pinelabs.11489778@pineaxis Date: 02-10-26 UPI Transaction Reference Number: 130578751508",
+    "ref": "130578751508",
+    "messageId": "1a0fb989cf3b242a"
+  }
+},
+{
+  "id": "hdfc-20261002-dcb9030062",
+  "datetime": "2026-10-02T16:44:21+05:30",
+  "amount": 450.0,
+  "merchant": "kprresots364@tmb",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "leisure",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.450.00 has been debited from your RuPay Credit Card (ending 9381) Paid to kprresots364@tmb Date: 02-10-26 UPI Transaction Reference Number: 130589154569",
+    "ref": "130589154569",
+    "messageId": "1a0fc529a0f37dcd"
+  }
+},
+{
+  "id": "hdfc-20261002-9118ff1872",
+  "datetime": "2026-10-02T17:58:45+05:30",
+  "amount": 60.0,
+  "merchant": "paytm.s2ezl7v@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.60.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.s2ezl7v@pty Date: 02-10-26 UPI Transaction Reference Number: 130593861759",
+    "ref": "130593861759",
+    "messageId": "1a0fc96c2a3fdd6e"
+  }
+}
 ]
