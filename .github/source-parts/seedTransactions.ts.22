@@ -11,8 +11,7 @@
     "provider": "gmail",
     "subject": "A payment was made using your Credit Card",
     "snippet": "Rs. 20590.00 has been debited from your HDFC Bank Credit Card ending 8946 towards PAYZAPP WALLET on 03 Oct, 2026 at 16:36:28.",
-    "messageId": "1a101c5c4afdb1fe",
-    "duplicateMessageIds": ["1a101cc5bec29520"]
+    "messageId": "1a101c5c4afdb1fe"
   }
 }
 ]
