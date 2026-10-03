@@ -1547,5 +1547,22 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "130593861759",
     "messageId": "1a0fc96c2a3fdd6e"
   }
+},
+{
+  "id": "hdfc-20261003-e4cd2fafd3",
+  "datetime": "2026-10-03T16:36:28+05:30",
+  "amount": 20590.0,
+  "merchant": "Payzapp Wallet",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 20590.00 has been debited from your HDFC Bank Credit Card ending 8946 towards PAYZAPP WALLET on 03 Oct, 2026 at 16:36:28.",
+    "messageId": "1a101c5c4afdb1fe",
+    "duplicateMessageIds": ["1a101cc5bec29520"]
+  }
 }
 ]
