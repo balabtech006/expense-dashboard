@@ -1,0 +1,34 @@
+{
+  "id": "hdfc-20261004-431d6965b2",
+  "datetime": "2026-10-04T11:34:57+05:30",
+  "amount": 50000.0,
+  "merchant": "The Royal Lands and Nest Cooperative",
+  "bank": "HDFC",
+  "paymentMethod": "bank_transfer",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "View: Account update for your HDFC Bank A/c",
+    "snippet": "Rs. 50000 has been deducted from your Account No. ending in XX2851 for a Transfer to payee The Royal Lands and Nest Cooperative via HDFC Bank Online Banking.",
+    "messageId": "1a105840f41ea41b"
+  }
+},
+{
+  "id": "hdfc-20261004-b45ecd6580",
+  "datetime": "2026-10-04T15:01:14+05:30",
+  "amount": 558.0,
+  "merchant": "swiggyinstamartecom@axb",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.558.00 has been debited from your RuPay Credit Card (ending 9381) Paid to swiggyinstamartecom@axb Date: 04-10-26 UPI Transaction Reference Number: 130703413534",
+    "ref": "130703413534",
+    "messageId": "1a10640e4be2b771"
+  }
+}
+]
