@@ -1596,5 +1596,90 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "130703413534",
     "messageId": "1a10640e4be2b771"
   }
+},
+{
+  "id": "hdfc-20261005-dceb02f3a8",
+  "datetime": "2026-10-05T12:56:46+05:30",
+  "amount": 220.0,
+  "merchant": "2415147695362-01@jiopay",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.220.00 has been debited from your RuPay Credit Card (ending 9381) Paid to 2415147695362-01@jiopay Date: 05-10-26 UPI Transaction Reference Number: 130751949681",
+    "ref": "130751949681",
+    "messageId": "1a10af555a44d387"
+  }
+},
+{
+  "id": "hdfc-20261005-2823e08e9d",
+  "datetime": "2026-10-05T13:07:05+05:30",
+  "amount": 87.0,
+  "merchant": "q538066144@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.87.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q538066144@ybl Date: 05-10-26 UPI Transaction Reference Number: 130752553607",
+    "ref": "130752553607",
+    "messageId": "1a10afec7644d98b"
+  }
+},
+{
+  "id": "hdfc-20261005-239041ac20",
+  "datetime": "2026-10-05T13:11:51+05:30",
+  "amount": 154.0,
+  "merchant": "q298025755@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.154.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q298025755@ybl Date: 05-10-26 UPI Transaction Reference Number: 130752834509",
+    "ref": "130752834509",
+    "messageId": "1a10b0327df2d961"
+  }
+},
+{
+  "id": "hdfc-20261005-2f9afe146f",
+  "datetime": "2026-10-05T13:14:13+05:30",
+  "amount": 50.0,
+  "merchant": "bhqr.1849286a@sib (NEW KEERTHI SUPER MARKET)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "groceries",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.50.00 is debited from your account ending 2851 towards VPA bhqr.1849286a@sib (NEW KEERTHI SUPER MARKET) on 05-10-26. UPI transaction reference no.: 130752987414",
+    "ref": "130752987414",
+    "messageId": "1a10b054e5d66704"
+  }
+},
+{
+  "id": "hdfc-20261005-9b5b35fd24",
+  "datetime": "2026-10-05T13:16:29+05:30",
+  "amount": 72.0,
+  "merchant": "1351261010268@cnrb",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.72.00 has been debited from your RuPay Credit Card (ending 9381) Paid to 1351261010268@cnrb Date: 05-10-26 UPI Transaction Reference Number: 130753126409",
+    "ref": "130753126409",
+    "messageId": "1a10b07661ee3e91"
+  }
 }
 ]
