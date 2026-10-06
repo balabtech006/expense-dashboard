@@ -1681,5 +1681,20 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "130753126409",
     "messageId": "1a10b07661ee3e91"
   }
+},
+{
+  "id": "manual-emi-20261006-hdfc",
+  "datetime": "2026-10-06T09:00:00+05:30",
+  "amount": 23857.0,
+  "merchant": "HDFC EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring HDFC EMI Rs.23857 on 6th"
+  }
 }
 ]
