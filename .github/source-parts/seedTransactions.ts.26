@@ -1,0 +1,99 @@
+{
+  "id": "manual-emi-20261007-pratheba-hdfc",
+  "datetime": "2026-10-07T09:00:00+05:30",
+  "amount": 25408.0,
+  "merchant": "Pratheba HDFC loan EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring Pratheba HDFC loan EMI Rs.25408 on 7th"
+  }
+},
+{
+  "id": "icici-20261007-feba6cd497",
+  "datetime": "2026-10-07T13:15:27+05:30",
+  "amount": 440.0,
+  "merchant": "Mother Hood",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "messageId": "1a115533524d2101",
+    "snippet": "INR 440.00 on Oct 07, 2026 at 01:15:27. Info: MOTHER HOOD"
+  }
+},
+{
+  "id": "hdfc-20261007-ddeac3d75c",
+  "datetime": "2026-10-07T14:48:52+05:30",
+  "amount": 70.0,
+  "merchant": "q043269610@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.70.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q043269610@ybl Date: 07-10-26 UPI Transaction Reference Number: 130870436688",
+    "ref": "130870436688",
+    "messageId": "1a115a8ac1697a83"
+  }
+},
+{
+  "id": "icici-20261007-850be7bf28",
+  "datetime": "2026-10-07T14:58:53+05:30",
+  "amount": 1703.1,
+  "merchant": "KM Petro Fuels",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "petrol_fuel",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "messageId": "1a115b1e79dbfee6",
+    "snippet": "INR 1703.10 on Oct 07, 2026 at 02:58:53. Info: KM PETRO FUELS"
+  }
+},
+{
+  "id": "hdfc-20261007-95b3340354",
+  "datetime": "2026-10-07T21:47:43+05:30",
+  "amount": 60.0,
+  "merchant": "paytmqr1tu0hq4o1a@paytm",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.60.00 has been debited from your RuPay Credit Card (ending 9381) Paid to paytmqr1tu0hq4o1a@paytm Date: 07-10-26 UPI Transaction Reference Number: 130898782926",
+    "ref": "130898782926",
+    "messageId": "1a1172824bfbffd5"
+  }
+},
+{
+  "id": "hdfc-20261007-f49a9d094d",
+  "datetime": "2026-10-07T21:49:56+05:30",
+  "amount": 390.0,
+  "merchant": "q289224018@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.390.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q289224018@ybl Date: 07-10-26 UPI Transaction Reference Number: 130898897351",
+    "ref": "130898897351",
+    "messageId": "1a1172a30932328e"
+  }
+}
+]
