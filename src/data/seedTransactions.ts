@@ -1794,5 +1794,88 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "130898897351",
     "messageId": "1a1172a30932328e"
   }
+},
+{
+  "id": "icici-20261008-fab4a83412",
+  "datetime": "2026-10-08T12:22:11+05:30",
+  "amount": 227.08,
+  "merchant": "KM Petro Fuels",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "petrol_fuel",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "messageId": "1a11a48d3e87c54d",
+    "snippet": "INR 227.08 on Oct 08, 2026 at 12:22:11. Info: KM PETRO FUELS"
+  }
+},
+{
+  "id": "hdfc-20261009-9c823b121b",
+  "datetime": "2026-10-09T11:53:54+05:30",
+  "amount": 50.0,
+  "merchant": "pinelabs.stq3788667@pineaxis (SUPER SARAVANA STORES TEX)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.50.00 is debited from your account ending 2851 towards VPA pinelabs.stq3788667@pineaxis (SUPER SARAVANA STORES TEX) on 09-10-26. UPI transaction reference no.: 130975939100",
+    "ref": "130975939100",
+    "messageId": "1a11f55343f1cbae"
+  }
+},
+{
+  "id": "icici-20261009-67ec29699b",
+  "datetime": "2026-10-09T13:09:36+05:30",
+  "amount": 3194.0,
+  "merchant": "Saravana Stores Tex",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "messageId": "1a11f9a96464fbe6",
+    "snippet": "INR 3194.00 on Oct 09, 2026 at 01:09:36. Info: SARAVANA STORES TEX"
+  }
+},
+{
+  "id": "hdfc-20261009-89acf4755a",
+  "datetime": "2026-10-09T13:55:42+05:30",
+  "amount": 240.0,
+  "merchant": "q588869701@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.240.00 has been debited from your RuPay Credit Card (ending 9381) Paid to q588869701@ybl Date: 09-10-26 UPI Transaction Reference Number: 130982995489",
+    "ref": "130982995489",
+    "messageId": "1a11fc4b7e750d97"
+  }
+},
+{
+  "id": "hdfc-20261009-ddba3f75ab",
+  "datetime": "2026-10-09T19:20:18+05:30",
+  "amount": 5900.0,
+  "merchant": "axisbankhlmortgages.rzp@axisbank (AXIS BANK HL MORTGAGES)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.5900.00 is debited from your account ending 2851 towards VPA axisbankhlmortgages.rzp@axisbank (AXIS BANK HL MORTGAGES) on 09-10-26. UPI transaction reference no.: 877210632826",
+    "ref": "877210632826",
+    "messageId": "1a120ede1d962935"
+  }
 }
 ]
