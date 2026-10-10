@@ -1877,5 +1877,131 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "877210632826",
     "messageId": "1a120ede1d962935"
   }
+},
+{
+  "id": "hdfc-20261010-7b0ff8e86d",
+  "datetime": "2026-10-10T07:48:08+05:30",
+  "amount": 3966.65,
+  "merchant": "Acko General Insurance",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 3966.65 has been debited from your HDFC Bank Credit Card ending 8946 towards ACKO COM CYBS SI on 10 Oct, 2026 at 07:48:08.",
+    "messageId": "1a1239ab2aa796ab"
+  }
+},
+{
+  "id": "manual-emi-20261010-land-loan",
+  "datetime": "2026-10-10T09:00:00+05:30",
+  "amount": 9541.0,
+  "merchant": "Land loan EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring Land loan EMI Rs.9541 on 10th"
+  }
+},
+{
+  "id": "manual-emi-20261010-home-loan",
+  "datetime": "2026-10-10T09:01:00+05:30",
+  "amount": 25497.0,
+  "merchant": "Home loan EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring Home loan EMI Rs.25497 on 10th"
+  }
+},
+{
+  "id": "manual-emi-20261010-land-insurance-loan",
+  "datetime": "2026-10-10T09:02:00+05:30",
+  "amount": 289.0,
+  "merchant": "Land insurance loan EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring Land insurance loan EMI Rs.289 on 10th"
+  }
+},
+{
+  "id": "manual-emi-20261010-home-insurance-loan",
+  "datetime": "2026-10-10T09:03:00+05:30",
+  "amount": 877.0,
+  "merchant": "Home insurance loan EMI",
+  "bank": "HDFC",
+  "paymentMethod": "emi",
+  "category": "emi",
+  "status": "posted",
+  "source": {
+    "provider": "manual",
+    "subject": "SMS-only EMI (not in mail)",
+    "snippet": "Recurring Home insurance loan EMI Rs.877 on 10th"
+  }
+},
+{
+  "id": "icici-20261010-ff094039be",
+  "datetime": "2026-10-10T11:38:34+05:30",
+  "amount": 3088.5,
+  "merchant": "Payzapp Wallet",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "messageId": "1a1246dac4faf4ec",
+    "snippet": "INR 3088.50 on Oct 10, 2026 at 11:38:34. Info: PAYZAPP WALLET"
+  }
+},
+{
+  "id": "hdfc-20261010-440260f870",
+  "datetime": "2026-10-10T11:45:48+05:30",
+  "amount": 1000.0,
+  "merchant": "8148474692-1@okbizaxis (GSR ENTERPRISES)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1000.00 is debited from your account ending 2851 towards VPA 8148474692-1@okbizaxis (GSR ENTERPRISES) on 10-10-26. UPI transaction reference no.: 131033733582",
+    "ref": "131033733582",
+    "messageId": "1a12474239e12b8b"
+  }
+},
+{
+  "id": "hdfc-20261010-b98e0c35a4",
+  "datetime": "2026-10-10T16:19:19+05:30",
+  "amount": 866.71,
+  "merchant": "paytm.d19587527675@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.866.71 has been debited from your RuPay Credit Card (ending 9381) Paid to paytm.d19587527675@pty Date: 10-10-26 UPI Transaction Reference Number: 131049001210",
+    "ref": "131049001210",
+    "messageId": "1a1256e919d4e0e5"
+  }
 }
 ]
