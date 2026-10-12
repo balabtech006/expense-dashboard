@@ -12,8 +12,7 @@
     "subject": "❗  You have done a UPI txn. Check details!",
     "snippet": "Rs.199.00 is debited from your account ending 2851 towards VPA netflixupi.payu@hdfcbank (NETFLIX COM) on 11-10-26. UPI transaction reference no.: 104230241938",
     "ref": "104230241938",
-    "messageId": "1a12bd083d37457d",
-    "note": "backfill: arrived after 2026-10-11 nightly run"
+    "messageId": "1a12bd083d37457d"
   }
 },
 {
