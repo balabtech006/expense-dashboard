@@ -1,0 +1,70 @@
+{
+  "id": "hdfc-20261011-1b860e7896",
+  "datetime": "2026-10-11T22:04:03+05:30",
+  "amount": 199.0,
+  "merchant": "netflixupi.payu@hdfcbank (NETFLIX COM)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "leisure",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.199.00 is debited from your account ending 2851 towards VPA netflixupi.payu@hdfcbank (NETFLIX COM) on 11-10-26. UPI transaction reference no.: 104230241938",
+    "ref": "104230241938",
+    "messageId": "1a12bd083d37457d",
+    "note": "backfill: arrived after 2026-10-11 nightly run"
+  }
+},
+{
+  "id": "hdfc-20261012-3693f34f7d",
+  "datetime": "2026-10-12T11:17:56+05:30",
+  "amount": 119.0,
+  "merchant": "equalidentitypr346432.rzprec@rxairtel (EQUALIDENTITYPRIVATELIMITED)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.119.00 is debited from your account ending 2851 towards VPA equalidentitypr346432.rzprec@rxairtel (EQUALIDENTITYPRIVATELIMITED) on 12-10-26. UPI transaction reference no.: 628511402605",
+    "ref": "628511402605",
+    "messageId": "1a12ea753b03446a"
+  }
+},
+{
+  "id": "hdfc-20261012-e06da3976f",
+  "datetime": "2026-10-12T13:43:22+05:30",
+  "amount": 1.0,
+  "merchant": "pradeepab35-2@okhdfcbank (PRATHEBA M)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1.00 is debited from your account ending 2851 towards VPA pradeepab35-2@okhdfcbank (PRATHEBA M) on 12-10-26. UPI transaction reference no.: 628559235249",
+    "ref": "628559235249",
+    "messageId": "1a12f2c801b8f5a7"
+  }
+},
+{
+  "id": "hdfc-20261012-4282b9b57c",
+  "datetime": "2026-10-12T22:00:02+05:30",
+  "amount": 228.0,
+  "merchant": "paytm.s180kyp@pty (NEW KEERTHI SUPER MARKET)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "groceries",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.228.00 is debited from your account ending 2851 towards VPA paytm.s180kyp@pty (NEW KEERTHI SUPER MARKET) on 12-10-26. UPI transaction reference no.: 131186364946",
+    "ref": "131186364946",
+    "messageId": "1a130f33dd6ec49a"
+  }
+}
+]
