@@ -1,0 +1,152 @@
+{
+  "id": "hdfc-20261014-7d8dddb782",
+  "datetime": "2026-10-14T20:40:04+05:30",
+  "amount": 140.0,
+  "merchant": "*********mod8@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.140.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********mod8@pty Date: 14-10-26 UPI Transaction Reference Number: 131293504650",
+    "ref": "131293504650",
+    "messageId": "1a13af6bd3ffa17e"
+  }
+},
+{
+  "id": "hdfc-20261015-b8a6e168a1",
+  "datetime": "2026-10-15T01:34:22+05:30",
+  "amount": 820.89,
+  "merchant": "WWW AIRTEL IN SI (Airtel Autopay)",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "bills_utilities",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 820.89 has been debited from your HDFC Bank Credit Card ending 8946 towards WWW AIRTEL IN SI on 15 Oct, 2026 at 01:34:22.",
+    "messageId": "1a13c043d30dd5f6"
+  }
+},
+{
+  "id": "hdfc-20261015-79a88c0665",
+  "datetime": "2026-10-15T11:00:57+05:30",
+  "amount": 220.0,
+  "merchant": "*********qjhm@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.220.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********qjhm@pty Date: 15-10-26 UPI Transaction Reference Number: 131313374899",
+    "ref": "131313374899",
+    "messageId": "1a13e0ae5ca53223"
+  }
+},
+{
+  "id": "icici-20261015-7b21ce4972",
+  "datetime": "2026-10-15T11:29:03+05:30",
+  "amount": 1624.0,
+  "merchant": "SREE MAHAVISHNU FUELS",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "petrol_fuel",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 1624.00 on Oct 15, 2026 at 11:29:03. Info: SREE MAHAVISHNU FUELS",
+    "messageId": "1a13e24bd14300b4"
+  }
+},
+{
+  "id": "hdfc-20261015-3d2c205a8d",
+  "datetime": "2026-10-15T13:31:30+05:30",
+  "amount": 2327.0,
+  "merchant": "***************.bqr@kotak (SHRE ISHWARIA MEDICALS)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "healthcare",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.2327.00 is debited from your account ending 2851 towards VPA ***************.bqr@kotak (SHRE ISHWARIA MEDICALS) on 15-10-26. UPI transaction reference no.: 131321632904",
+    "ref": "131321632904",
+    "messageId": "1a13e94b4aaacb49"
+  }
+},
+{
+  "id": "hdfc-20261015-7b951e5da0",
+  "datetime": "2026-10-15T13:40:47+05:30",
+  "amount": 590.0,
+  "merchant": "******2863@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.590.00 has been debited from your RuPay Credit Card (ending 9381) Paid to ******2863@ybl Date: 15-10-26 UPI Transaction Reference Number: 131322172731",
+    "ref": "131322172731",
+    "messageId": "1a13e9d33845f90b"
+  }
+},
+{
+  "id": "hdfc-20261015-f96ea1e0ec",
+  "datetime": "2026-10-15T13:41:08+05:30",
+  "amount": 9.0,
+  "merchant": "******2863@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.9.00 has been debited from your RuPay Credit Card (ending 9381) Paid to ******2863@ybl Date: 15-10-26 UPI Transaction Reference Number: 131322184863",
+    "ref": "131322184863",
+    "messageId": "1a13e9d89e289d32"
+  }
+},
+{
+  "id": "hdfc-20261015-28ef0ab96a",
+  "datetime": "2026-10-15T17:17:41+05:30",
+  "amount": 200.0,
+  "merchant": "***********shnu@oksbi (S VISHNU PANDIYAN)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.200.00 is debited from your account ending 2851 towards VPA ***********shnu@oksbi (S VISHNU PANDIYAN) on 15-10-26. UPI transaction reference no.: 131333497796",
+    "ref": "131333497796",
+    "messageId": "1a13f63cf4910652"
+  }
+},
+{
+  "id": "hdfc-20261016-6063ed664a",
+  "datetime": "2026-10-16T20:50:30+05:30",
+  "amount": 200.0,
+  "merchant": "****************load@apl (Amazon Pay Balance)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "online_shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.200.00 is debited from your account ending 2851 towards VPA ****************load@apl (Amazon Pay Balance) on 16-10-26. UPI transaction reference no.: 131403293167",
+    "ref": "131403293167",
+    "messageId": "1a1454d02cb6b595"
+  }
+}
+]
