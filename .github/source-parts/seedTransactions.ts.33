@@ -97,5 +97,56 @@
     "snippet": "Rs. 17281 has been deducted from your Account No. ending in XX2851 for a Transfer to payee The Royal Lands and Nest Cooperative via HDFC Bank Online Banking.",
     "messageId": "1a14a4c76b5ec099"
   }
+},
+{
+  "id": "hdfc-20261018-697b8525cd",
+  "datetime": "2026-10-18T13:42:20+05:30",
+  "amount": 373.0,
+  "merchant": "******************10-4@oksbi (SOWMIYA M)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.373.00 is debited from your account ending 2851 towards VPA ******************10-4@oksbi (SOWMIYA M) on 18-10-26. UPI transaction reference no.: 131485235196",
+    "ref": "131485235196",
+    "messageId": "1a14e11b5f4d31bb"
+  }
+},
+{
+  "id": "hdfc-20261018-ffdc20bab0",
+  "datetime": "2026-10-18T13:50:57+05:30",
+  "amount": 1027.0,
+  "merchant": "******0642@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1027.00 has been debited from your RuPay Credit Card (ending 9381) Paid to ******0642@ybl Date: 18-10-26 UPI Transaction Reference Number: 131485694405",
+    "ref": "131485694405",
+    "messageId": "1a14e199b3f8afdc"
+  }
+},
+{
+  "id": "hdfc-20261018-257095e683",
+  "datetime": "2026-10-18T18:10:34+05:30",
+  "amount": 200.0,
+  "merchant": "*****************33-1@okaxis (PHOTO PLUS)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.200.00 is debited from your account ending 2851 towards VPA *****************33-1@okaxis (PHOTO PLUS) on 18-10-26. UPI transaction reference no.: 131499599487",
+    "ref": "131499599487",
+    "messageId": "1a14f074d81df157"
+  }
 }
 ]
