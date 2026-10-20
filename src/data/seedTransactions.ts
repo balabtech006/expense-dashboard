@@ -2845,5 +2845,73 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "131563319083",
     "messageId": "1a154cac267009be"
   }
+},
+{
+  "id": "hdfc-20261020-6aa1542144",
+  "datetime": "2026-10-20T14:21:32+05:30",
+  "amount": 1119.0,
+  "merchant": "**************4703@pty (SARASHAPE IN)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1119.00 is debited from your account ending 2851 towards VPA **************4703@pty (SARASHAPE IN) on 20-10-26. UPI transaction reference no.: 131590287837",
+    "ref": "131590287837",
+    "messageId": "1a15882542d21b38"
+  }
+},
+{
+  "id": "hdfc-20261020-675bcebebd",
+  "datetime": "2026-10-20T14:47:55+05:30",
+  "amount": 499.0,
+  "merchant": "**************7294@pty (Prisma Garments Saravanampatti)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.499.00 is debited from your account ending 2851 towards VPA **************7294@pty (Prisma Garments Saravanampatti) on 20-10-26. UPI transaction reference no.: 131591497629",
+    "ref": "131591497629",
+    "messageId": "1a1589a79b843e56"
+  }
+},
+{
+  "id": "hdfc-20261020-5d319c290b",
+  "datetime": "2026-10-20T14:48:41+05:30",
+  "amount": 75.0,
+  "merchant": "*********t50k@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.75.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********t50k@pty Date: 20-10-26 UPI Transaction Reference Number: 131591530147",
+    "ref": "131591530147",
+    "messageId": "1a1589b2c6045314"
+  }
+},
+{
+  "id": "hdfc-20261020-17b4b9198e",
+  "datetime": "2026-10-20T15:28:07+05:30",
+  "amount": 227.0,
+  "merchant": "*********e6hb@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.227.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********e6hb@pty Date: 20-10-26 UPI Transaction Reference Number: 131593267069",
+    "ref": "131593267069",
+    "messageId": "1a158bf4b888fd00"
+  }
 }
 ]
