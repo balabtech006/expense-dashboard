@@ -1,0 +1,69 @@
+{
+  "id": "hdfc-20261021-c6ad430d92",
+  "datetime": "2026-10-21T02:24:58+05:30",
+  "amount": 918.1,
+  "merchant": "**************payu@hdfcbank (WWW AIRTEL IN)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "bills_utilities",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.918.10 is debited from your account ending 2851 towards VPA **************payu@hdfcbank (WWW AIRTEL IN) on 21-10-26. UPI transaction reference no.: 104287401022",
+    "ref": "104287401022",
+    "messageId": "1a15b18a4c3b861b"
+  }
+},
+{
+  "id": "hdfc-20261021-9aa806567f",
+  "datetime": "2026-10-21T10:47:00+05:30",
+  "amount": 160.0,
+  "merchant": "*********o6qt@ptys",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.160.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********o6qt@ptys Date: 21-10-26 UPI Transaction Reference Number: 131628706653",
+    "ref": "131628706653",
+    "messageId": "1a15ce44d7e473eb"
+  }
+},
+{
+  "id": "hdfc-20261021-2fcbaa07d9",
+  "datetime": "2026-10-21T21:35:24+05:30",
+  "amount": 334.0,
+  "merchant": "********lity@okpayaxis (Google India Digital Services Pvt Ltd)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.334.00 is debited from your account ending 2851 towards VPA ********lity@okpayaxis (Google India Digital Services Pvt Ltd) on 21-10-26. UPI transaction reference no.: 629444352465",
+    "ref": "629444352465",
+    "messageId": "1a15f35e73a8d9df"
+  }
+},
+{
+  "id": "hdfc-20261021-44b53685a3",
+  "datetime": "2026-10-21T21:35:47+05:30",
+  "amount": 362.0,
+  "merchant": "********lity@okpayaxis (Google India Digital Services Pvt Ltd)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.362.00 is debited from your account ending 2851 towards VPA ********lity@okpayaxis (Google India Digital Services Pvt Ltd) on 21-10-26. UPI transaction reference no.: 131664511085",
+    "ref": "131664511085",
+    "messageId": "1a15f363de77ee9d"
+  }
+}
+]
