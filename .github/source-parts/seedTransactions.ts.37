@@ -1,0 +1,17 @@
+{
+  "id": "icici-20261023-9c98d3abf7",
+  "datetime": "2026-10-23T13:08:31+05:30",
+  "amount": 2949.77,
+  "merchant": "Reliance SMART",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "groceries",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 2949.77 on Oct 23, 2026 at 01:08:31. Info: Reliance SMART",
+    "messageId": "1a167b29f121fed3"
+  }
+}
+]
