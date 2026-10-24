@@ -1,0 +1,82 @@
+{
+  "id": "icici-20261024-cb6c9a0555",
+  "datetime": "2026-10-24T11:39:16+05:30",
+  "amount": 2374.0,
+  "merchant": "AMAZON PAY IN E COMMERCE",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 2374.00 on Oct 24, 2026 at 11:39:16. Info: AMAZON PAY IN E COMMERCE",
+    "messageId": "1a16c873ee9f6589"
+  }
+},
+{
+  "id": "icici-20261024-3da3fe42c2",
+  "datetime": "2026-10-24T14:18:57+05:30",
+  "amount": 1.0,
+  "merchant": "ZOMATO CYBS",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 1.00 on Oct 24, 2026 at 02:18:57. Info: ZOMATO CYBS",
+    "messageId": "1a16d19705309900"
+  }
+},
+{
+  "id": "icici-20261024-81330489cb",
+  "datetime": "2026-10-24T14:28:25+05:30",
+  "amount": 349.64,
+  "merchant": "ZOMATO CYBS",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 349.64 on Oct 24, 2026 at 02:28:25. Info: ZOMATO CYBS",
+    "messageId": "1a16d222c208c352"
+  }
+},
+{
+  "id": "icici-20261024-f2c9d19f0c",
+  "datetime": "2026-10-24T14:35:28+05:30",
+  "amount": 217.09,
+  "merchant": "ZOMATO CYBS",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 217.09 on Oct 24, 2026 at 02:35:28. Info: ZOMATO CYBS",
+    "messageId": "1a16d2893278372a"
+  }
+},
+{
+  "id": "hdfc-20261024-627b5f6182",
+  "datetime": "2026-10-24T15:49:29+05:30",
+  "amount": 500.0,
+  "merchant": "******ss-4@okhdfcbank (SIVARAJ K)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.500.00 is debited from your account ending 2851 towards VPA ******ss-4@okhdfcbank (SIVARAJ K) on 24-10-26. UPI transaction reference no.: 131789995520",
+    "ref": "131789995520",
+    "messageId": "1a16d6c42e7ef468"
+  }
+}
+]
