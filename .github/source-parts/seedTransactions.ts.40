@@ -1,0 +1,51 @@
+{
+  "id": "hdfc-20261026-93095946a7",
+  "datetime": "2026-10-26T14:21:16+05:30",
+  "amount": 541.15,
+  "merchant": "VERA KUMAARASWAMY AUTO",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 541.15 has been debited from your HDFC Bank Credit Card ending 8946 towards VERA KUMAARASWAMY AUTO on 26 Oct, 2026 at 14:21:16.",
+    "messageId": "1a177685492a4158"
+  }
+},
+{
+  "id": "hdfc-20261026-ddc3f2776f",
+  "datetime": "2026-10-26T14:28:59+05:30",
+  "amount": 40.0,
+  "merchant": "**********d312@okhdfcbank (RAJKUMAR S)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.40.00 is debited from your account ending 2851 towards VPA **********d312@okhdfcbank (RAJKUMAR S) on 26-10-26. UPI transaction reference no.: 131883974590",
+    "ref": "131883974590",
+    "messageId": "1a1776f4d0780710"
+  }
+},
+{
+  "id": "hdfc-20261026-cb7c06ece8",
+  "datetime": "2026-10-26T19:40:19+05:30",
+  "amount": 100.0,
+  "merchant": "*********6bci@ptys",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.100.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********6bci@ptys Date: 26-10-26 UPI Transaction Reference Number: 131901629063",
+    "ref": "131901629063",
+    "messageId": "1a1788c573c1586d"
+  }
+}
+]
