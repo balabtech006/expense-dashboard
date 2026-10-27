@@ -3078,5 +3078,104 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "131789995520",
     "messageId": "1a16d6c42e7ef468"
   }
+},
+{
+  "id": "icici-20261025-9d5347225b",
+  "datetime": "2026-10-25T03:21:37+05:30",
+  "amount": 1016.0,
+  "merchant": "AMAZON (Amazon Utility, TNEB electricity)",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "bills_utilities",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 1016.00 on Oct 25, 2026 at 03:21:37. Info: AMAZON",
+    "messageId": "1a16fe61eddc6c6b"
+  }
+},
+{
+  "id": "hdfc-20261025-25929ec8df",
+  "datetime": "2026-10-25T13:12:17+05:30",
+  "amount": 1010.0,
+  "merchant": "**************7675@pty (17170 Apollo Pharmacy)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "healthcare",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1010.00 is debited from your account ending 2851 towards VPA **************7675@pty (17170 Apollo Pharmacy) on 25-10-26. UPI transaction reference no.: 131832150568",
+    "ref": "131832150568",
+    "messageId": "1a17202b2aea44ea"
+  }
+},
+{
+  "id": "icici-20261025-fa160185e4",
+  "datetime": "2026-10-25T19:03:17+05:30",
+  "amount": 3939.52,
+  "merchant": "AMAZON PAY IN E COMMERCE",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "shopping",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 3939.52 on Oct 25, 2026 at 07:03:17. Info: AMAZON PAY IN E COMMERCE",
+    "messageId": "1a1734442aaef364"
+  }
+},
+{
+  "id": "hdfc-20261026-93095946a7",
+  "datetime": "2026-10-26T14:21:16+05:30",
+  "amount": 541.15,
+  "merchant": "VERA KUMAARASWAMY AUTO",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 541.15 has been debited from your HDFC Bank Credit Card ending 8946 towards VERA KUMAARASWAMY AUTO on 26 Oct, 2026 at 14:21:16.",
+    "messageId": "1a177685492a4158"
+  }
+},
+{
+  "id": "hdfc-20261026-ddc3f2776f",
+  "datetime": "2026-10-26T14:28:59+05:30",
+  "amount": 40.0,
+  "merchant": "**********d312@okhdfcbank (RAJKUMAR S)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.40.00 is debited from your account ending 2851 towards VPA **********d312@okhdfcbank (RAJKUMAR S) on 26-10-26. UPI transaction reference no.: 131883974590",
+    "ref": "131883974590",
+    "messageId": "1a1776f4d0780710"
+  }
+},
+{
+  "id": "hdfc-20261026-cb7c06ece8",
+  "datetime": "2026-10-26T19:40:19+05:30",
+  "amount": 100.0,
+  "merchant": "*********6bci@ptys",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.100.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********6bci@ptys Date: 26-10-26 UPI Transaction Reference Number: 131901629063",
+    "ref": "131901629063",
+    "messageId": "1a1788c573c1586d"
+  }
 }
 ]
