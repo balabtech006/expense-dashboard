@@ -3194,5 +3194,121 @@ export const SEED_TRANSACTIONS: Transaction[] =
     "ref": "630052202041",
     "messageId": "1a17c079228dd3be"
   }
+},
+{
+  "id": "hdfc-20261028-d8db123514",
+  "datetime": "2026-10-28T10:19:08+05:30",
+  "amount": 8.26,
+  "merchant": "UTIITSL",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 8.26 has been debited from your HDFC Bank Credit Card ending 8946 towards UTIITSL on 28 Oct, 2026 at 10:19:08.",
+    "messageId": "1a180d758208331b"
+  }
+},
+{
+  "id": "hdfc-20261028-6b7f3e12c1",
+  "datetime": "2026-10-28T11:13:23+05:30",
+  "amount": 180.0,
+  "merchant": "******2310@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.180.00 has been debited from your RuPay Credit Card (ending 9381) Paid to ******2310@ybl Date: 28-10-26 UPI Transaction Reference Number: 131971409736",
+    "ref": "131971409736",
+    "messageId": "1a18108f20c0ef7c"
+  }
+},
+{
+  "id": "hdfc-20261028-55f6837c40",
+  "datetime": "2026-10-28T11:38:29+05:30",
+  "amount": 440.0,
+  "merchant": "**************2530@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.440.00 has been debited from your RuPay Credit Card (ending 9381) Paid to **************2530@pty Date: 28-10-26 UPI Transaction Reference Number: 131972596205",
+    "ref": "131972596205",
+    "messageId": "1a1811febd928291"
+  }
+},
+{
+  "id": "hdfc-20261028-1b880187c2",
+  "datetime": "2026-10-28T11:45:47+05:30",
+  "amount": 80.0,
+  "merchant": "*********2bet@ptys",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.80.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********2bet@ptys Date: 28-10-26 UPI Transaction Reference Number: 131972941888",
+    "ref": "131972941888",
+    "messageId": "1a181269ad174835"
+  }
+},
+{
+  "id": "icici-20261028-4ce384adf8",
+  "datetime": "2026-10-28T13:40:27+05:30",
+  "amount": 223.0,
+  "merchant": "RAZ*Swiggy",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 223.00 on Oct 28, 2026 at 01:40:27. Info: RAZ*Swiggy",
+    "messageId": "1a1818fd2ccc50f2"
+  }
+},
+{
+  "id": "hdfc-20261028-0ba24ef3a9",
+  "datetime": "2026-10-28T16:35:40+05:30",
+  "amount": 940.0,
+  "merchant": "**************7675@pty",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.940.00 has been debited from your RuPay Credit Card (ending 9381) Paid to **************7675@pty Date: 28-10-26 UPI Transaction Reference Number: 131986889754",
+    "ref": "131986889754",
+    "messageId": "1a1823008af77788"
+  }
+},
+{
+  "id": "icici-20261028-0e62ed273e",
+  "datetime": "2026-10-28T21:09:41+05:30",
+  "amount": 604.13,
+  "merchant": "ZOMATO CYBS",
+  "bank": "ICICI",
+  "paymentMethod": "credit_card",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "Transaction alert for your ICICI Bank Credit Card",
+    "snippet": "INR 604.13 on Oct 28, 2026 at 09:09:41. Info: ZOMATO CYBS",
+    "messageId": "1a1832b247efd70e"
+  }
 }
 ]
