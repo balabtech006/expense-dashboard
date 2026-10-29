@@ -1,0 +1,85 @@
+{
+  "id": "hdfc-20261029-7939cdaa41",
+  "datetime": "2026-10-29T13:32:53+05:30",
+  "amount": 494.0,
+  "merchant": "******0669@ybl",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.494.00 has been debited from your RuPay Credit Card (ending 9381) Paid to ******0669@ybl Date: 29-10-26 UPI Transaction Reference Number: 132028941033",
+    "ref": "132028941033",
+    "messageId": "1a186af06705b5a0"
+  }
+},
+{
+  "id": "hdfc-20261029-446e01c103",
+  "datetime": "2026-10-29T13:35:31+05:30",
+  "amount": 42.0,
+  "merchant": "*********286a@sib (NEW KEERTHI SUPER MARKET)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "groceries",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.42.00 is debited from your account ending 2851 towards VPA *********286a@sib (NEW KEERTHI SUPER MARKET) on 29-10-26. UPI transaction reference no.: 132029074190",
+    "ref": "132029074190",
+    "messageId": "1a186b16b69195de"
+  }
+},
+{
+  "id": "hdfc-20261029-1db690eb13",
+  "datetime": "2026-10-29T13:45:47+05:30",
+  "amount": 1063.04,
+  "merchant": "********aytm@hdfcbank (Zomato Media Private Limited)",
+  "bank": "HDFC",
+  "paymentMethod": "upi",
+  "category": "food_dining",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.1063.04 is debited from your account ending 2851 towards VPA ********aytm@hdfcbank (Zomato Media Private Limited) on 29-10-26. UPI transaction reference no.: 630281296338",
+    "ref": "630281296338",
+    "messageId": "1a186bad5cd0260f"
+  }
+},
+{
+  "id": "hdfc-20261029-eea9a05d18",
+  "datetime": "2026-10-29T21:11:02+05:30",
+  "amount": 1623.6,
+  "merchant": "BALAJI SERVICE STATION",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "petrol_fuel",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "A payment was made using your Credit Card",
+    "snippet": "Rs. 1623.60 has been debited from your HDFC Bank Credit Card ending 8946 towards BALAJI SERVICE STATION on 29 Oct, 2026 at 21:11:02.",
+    "messageId": "1a18852b8db566da"
+  }
+},
+{
+  "id": "hdfc-20261029-8a05bd956c",
+  "datetime": "2026-10-29T21:41:03+05:30",
+  "amount": 320.0,
+  "merchant": "*********llcw@paytm",
+  "bank": "HDFC",
+  "paymentMethod": "credit_card",
+  "category": "other",
+  "status": "posted",
+  "source": {
+    "provider": "gmail",
+    "subject": "❗  You have done a UPI txn. Check details!",
+    "snippet": "Rs.320.00 has been debited from your RuPay Credit Card (ending 9381) Paid to *********llcw@paytm Date: 29-10-26 UPI Transaction Reference Number: 132057277719",
+    "ref": "132057277719",
+    "messageId": "1a1886df5f01e733"
+  }
+}
+]
